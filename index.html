@@ -26,28 +26,69 @@
         </div>
     </nav>
 
-    <div class="container">
-        <section id="home" class="hero">
-            <h1>
-                <span>Hello World! Be very Welcome</span>
-                <p>Oque vc acha de transformar a sua ideia em realidade?</p>
-                <p><span>sua ideia, meu codigo.</span></p>
-            </h1>
-           
-            <p class="hero-description">
-                Hello! <span>sou o Samuel, Desenvolvedor de Software.</span>
-                Com paixão e habilidade, transformo suas ideias
-                <span>em experiências digitais únicas.</span>
-                Que tal começarmos algo incrível <span><b>juntos?</b></span>
-            </p>
-            <div class="scroll-indicator" onclick="scrollToSection('projects')">
-                <span>↓</span>
+        <section class="hero">
+        <!-- Grid de fundo -->
+        <div class="grid-background"></div>
+
+        <!-- Orbes flutuantes -->
+        <div class="floating-orbs">
+            <div class="orb"></div>
+            <div class="orb"></div>
+            <div class="orb"></div>
+        </div>
+
+        <!-- Tags de tecnologia flutuantes -->
+        <div class="floating-tags">
+            <div class="tech-tag"> JavaScript</div>
+            <div class="tech-tag"> Design</div>
+            <div class="tech-tag"> React</div>
+            <div class="tech-tag"> HTML</div>
+            <div class="tech-tag"> CSS</div>
+        </div>
+
+        <!-- Canvas para efeitos 3D -->
+        <canvas id="hero-canvas"></canvas>
+
+        <!-- Conteúdo principal -->
+        <div class="hero-content">
+            <!-- Avatar com anel orbital -->
+            <div class="hero-avatar">
+                <div class="orbit-ring"></div>
+                <div class="avatar-circle">
+                    👨‍💻
+                </div>
             </div>
-        </section>
+
+            <!-- Texto com efeito typewriter -->
+            <h1 class="hero-title">
+                <span class="typewriter">Samuel</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Transformando <span>ideias em código</span>,<br>
+                criando <span>experiências digitais únicas</span>
+            </p>
+
+            <!-- Botões de ação -->
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    Ver Projetos →
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Vamos conversar
+                </a>
+            </div>
+        </div>
+
+        <!-- Indicador de scroll -->
+        <div class="scroll-indicator" onclick="document.querySelector('#projects').scrollIntoView({behavior: 'smooth'})">
+            ↓
+        </div>
+    </section>
 
         <section id="projects">
             <h2 class="section-title">Projetos</h2>
-           
+        
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-icon">👾</div>
